@@ -10,7 +10,7 @@
 実行タイミング  Rubyのインストール場所  実行するRubyプログラムのフルパス
 ```
 
-例
+毎日00:05に実行する例
 ```
 5 0 * * * /Users/mashio/.rbenv/shims/ruby /Users/mashio/auto-reporting/report.rb   
 ```
