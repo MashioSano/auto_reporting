@@ -3,4 +3,14 @@
 
 ## 使い方
 <code>report.rb</code>にログイン名とパスワードを記述。
-<code>report.plist</code>を<code>/Users/xxxx/Library/LaunchAgents/</code>に置く。(Mac OS)
+
+<code>crontab -e</code>でエディタを起動し以下のフォーマットに沿ってcronを登録。
+
+```
+実行タイミング  Rubyのインストール場所  実行するRubyプログラムのフルパス
+```
+
+例
+```
+5 0 * * * /Users/mashio/.rbenv/shims/ruby /Users/mashio/auto-reporting/report.rb   
+```
